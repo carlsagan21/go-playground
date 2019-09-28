@@ -19,7 +19,7 @@ func countRunesInMap(S string, m map[rune]struct{}) int {
 }
 
 func asRuneMap(J string) map[rune]struct{} {
-	var jewels = make(map[rune]struct{})
+	jewels := make(map[rune]struct{})
 	for _, j := range []rune(J) {
 		jewels[j] = struct{}{}
 	}
