@@ -1,9 +1,12 @@
 package main
 
-import "math"
+import (
+	"github.com/carlsagan21/go-playground/lib"
+	"math"
+)
 
 // Not optimal but O(n)
-func getMinimumDifference(root *TreeNode) int {
+func getMinimumDifference(root *lib.TreeNode) int {
 	var sortedList []int
 	traverse(root, &sortedList)
 	diff := math.MaxInt32
@@ -19,7 +22,7 @@ func getMinimumDifference(root *TreeNode) int {
 	return diff
 }
 
-func traverse(root *TreeNode, sortedList *[]int) {
+func traverse(root *lib.TreeNode, sortedList *[]int) {
 	if root == nil {
 		return
 	}

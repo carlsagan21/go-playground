@@ -1,6 +1,8 @@
 package main
 
-func hasPathSum(root *TreeNode, sum int) bool {
+import "github.com/carlsagan21/go-playground/lib"
+
+func hasPathSum(root *lib.TreeNode, sum int) bool {
 	if root == nil {
 		return false
 	}
